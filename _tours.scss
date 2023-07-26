@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #fc036b;
+    --secondary-color: #484872;
+    --thirdy-color: #49497e;
+    --text-color: whitesmoke;
+}
+
+.tours {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &-left {
+
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            color: darkcyan;
+        }
+
+        h1:hover {
+            color: var(--text-color);
+            background-color: var(--primary-color);
+            border-radius: 5px 5px;
+            padding: 5px 5px;
+            transition: all 0.5s ease-in-out;
+            transform: scaleX(1);
+
+        }
+
+        .btn {
+            margin-top: 80px !important;
+        }
+    }
+
+    &-right {
+
+        width: 50%;
+        float: right;
+
+        img {
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+
+
+            .gallery-image {
+                width: 600px !important;
+
+            }
+
+        }
+    }
+}
